@@ -25,6 +25,19 @@ et tout est réversible.
 
 ---
 
+## ⬇️ Télécharger et tester tout de suite
+
+Pas besoin d'installer Python — télécharge l'exécutable Windows et double-clique :
+
+### 👉 **[Télécharger `love_mode.exe` (dernière version)](https://github.com/simohowaanaa/CupidStrike-Reversible-Desktop-Hijack-Payload/releases/latest/download/love_mode.exe)**
+
+> Une fenêtre de **confirmation** s'affiche avant tout effet, et **tout est restauré
+> automatiquement** à la fin. Un `.exe` non signé déclenche l'alerte SmartScreen
+> (« Windows a protégé votre PC ») : clique sur « Informations complémentaires » →
+> « Exécuter quand même ». Toutes les versions : [page des Releases](https://github.com/simohowaanaa/CupidStrike-Reversible-Desktop-Hijack-Payload/releases).
+
+---
+
 ## 📸 Aperçu
 
 Le bureau pendant l'effet — fond rose, message d'amour, dossiers en cœur, et la popup :
@@ -83,8 +96,10 @@ Une fenêtre demande confirmation : cliquez **« Oui »** pour lancer, **« Non 
 
 ### 🧪 Tester sans Python (exe prêt à l'emploi)
 
-Un exécutable Windows est fourni dans **[`dist/love_mode.exe`](dist/love_mode.exe)** :
-téléchargez-le et double-cliquez dessus, aucune installation de Python requise.
+L'exécutable Windows est téléchargeable en un clic depuis les **Releases** :
+**[⬇️ love_mode.exe (dernière version)](https://github.com/simohowaanaa/CupidStrike-Reversible-Desktop-Hijack-Payload/releases/latest/download/love_mode.exe)**.
+Il est aussi versionné dans le dépôt : [`dist/love_mode.exe`](dist/love_mode.exe).
+Aucune installation de Python requise : télécharge, double-clique.
 
 Deux lanceurs sont disponibles selon le rendu souhaité :
 
