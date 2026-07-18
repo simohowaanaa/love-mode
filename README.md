@@ -1,8 +1,19 @@
-# ❤️ Love Mode — une déclaration d'amour qui prend tout l'écran
+# 💘 CupidStrike — Consensual, Fully-Reversible Desktop-Hijack Payload
 
-**Love Mode** est un petit programme-blague pour **Windows**. Quand on le lance, il
-transforme pendant quelques minutes tout le bureau en une **pluie de cœurs** avec le
-message *« Sorry but I love u »*… puis **remet absolument tout comme avant, tout seul**.
+> *Une charge « offensive » qui détourne tout le bureau… puis restaure absolument tout,
+> toute seule. L'esthétique d'un malware, l'éthique d'un cadeau.*
+
+**CupidStrike** est une preuve de concept (proof-of-concept) inoffensive pour **Windows**,
+dans l'esprit d'une charge red-team — mais **visible, consentie et 100 % réversible**.
+Quand on la lance, elle **détourne tout le bureau** pendant quelques minutes : pluie de
+cœurs plein écran, fond d'écran, icônes de dossiers et titres de fenêtres remplacés par le
+message *« Sorry but I love u »*… puis elle **remet absolument tout comme avant, sans
+laisser aucune trace**.
+
+C'est une démonstration ludique de techniques d'« environment tampering » Windows
+(fond d'écran via `SystemParametersInfoW`, icônes via `desktop.ini`, overlay `tkinter`,
+titres via `EnumWindows`) — le tout avec sauvegarde/restauration systématique de l'état
+d'origine. Autrement dit : le *look* d'un malware, mais rien de malveillant.
 
 C'est une surprise romantique et inoffensive : à lancer sur son propre PC, ou à montrer
 à quelqu'un qui est d'accord de cliquer « Oui ». Rien n'est installé, rien n'est caché,
