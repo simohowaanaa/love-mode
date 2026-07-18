@@ -1,14 +1,10 @@
-# Artefacts de build PyInstaller
+# Artefacts de build PyInstaller (on publie seulement dist/ pour les testeurs)
 build/
-dist/
 *.spec
 
 # Cache Python
 __pycache__/
 *.pyc
-
-# Lanceur furtif (fenêtre cachée) — volontairement non publié
-simo.vbs
 
 # Fichiers temporaires de l'effet
 *.bmp

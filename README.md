@@ -70,6 +70,27 @@ Ou double-clic sur **`Lancez-moi.bat`**.
 
 Une fenêtre demande confirmation : cliquez **« Oui »** pour lancer, **« Non »** pour annuler.
 
+### 🧪 Tester sans Python (exe prêt à l'emploi)
+
+Un exécutable Windows est fourni dans **[`dist/love_mode.exe`](dist/love_mode.exe)** :
+téléchargez-le et double-cliquez dessus, aucune installation de Python requise.
+
+Deux lanceurs sont disponibles selon le rendu souhaité :
+
+| Lanceur | Effet |
+|---|---|
+| **`Lancez-moi.bat`** | Ouvre une petite fenêtre console + l'effet. |
+| **`simo.vbs`** | Lance l'effet **sans la fenêtre console** (plus propre). |
+
+> ℹ️ **À propos de `simo.vbs`** : il ne fait que **masquer la fenêtre console**. La
+> fenêtre de confirmation « Oui / Non » s'affiche **toujours** : rien ne démarre sans
+> ton accord. Le programme n'est pas rendu furtif, il reste consenti et réversible.
+
+> ⚠️ Un `.exe` non signé déclenche l'alerte SmartScreen (« Windows a protégé votre
+> PC ») : c'est normal pour un petit programme sans réputation. Clique sur
+> « Informations complémentaires » → « Exécuter quand même », ou lance plutôt le
+> script Python si tu préfères.
+
 ## ⚙️ Configuration
 
 Tout se règle en haut de [`love_mode.py`](love_mode.py) :
@@ -88,7 +109,9 @@ NOM_AFFICHE = "KNBGHIK"       # nom affiché des dossiers créés
 |---|---|
 | [`love_mode.py`](love_mode.py) | Le cœur du programme : effets, sauvegarde et restauration. |
 | [`launcher.py`](launcher.py) | Vérifie/installe les dépendances puis lance l'effet. |
-| [`Lancez-moi.bat`](Lancez-moi.bat) | Double-clic pour lancer sous Windows. |
+| [`Lancez-moi.bat`](Lancez-moi.bat) | Double-clic pour lancer sous Windows (avec console). |
+| [`simo.vbs`](simo.vbs) | Lance l'effet sans la fenêtre console (confirmation conservée). |
+| [`dist/love_mode.exe`](dist/love_mode.exe) | Exécutable prêt à tester, sans installer Python. |
 | [`build_exe.py`](build_exe.py) | Construit un `.exe` autonome (optionnel, via PyInstaller). |
 | `README.md` / `README.txt` | Documentation. |
 | `LICENSE` | Licence MIT. |
